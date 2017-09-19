@@ -12,18 +12,20 @@ public class PerfectNumbers {
     }
 
     public void printPerfectNumbers(int n) {
-        int count = 1;
+        int count = 2;
 
         while (count <= n) {
-            int result = 0;
-            int divisor = 1;
-            while (divisor < count) {
+            int sum = 1;
+            for (int divisor = 2; divisor <= Math.sqrt(count); divisor++) {
                 if (count % divisor == 0) {
-                    result += divisor;
+                    sum += divisor;
+                    if (divisor != count / divisor) {
+                        sum += count / divisor;
+                    }
                 }
-                divisor++;
             }
-            if (result == count) {
+
+            if (sum == count) {
                 System.out.println(count);
             }
             count++;

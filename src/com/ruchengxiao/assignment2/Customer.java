@@ -24,6 +24,8 @@ public class Customer {
             sum += pizza.unitPrice * pizzasOrdered.get(pizza);
         }
 
+
+
         return sum;
     }
 
