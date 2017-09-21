@@ -1,7 +1,7 @@
 package com.ruchengxiao.assignment2;
-/*
-* This file include 1, 2, 3, 6 problem
-* */
+   /*
+    * This file include 1, 2, 3, 6 problems
+    */
 public class Solution {
     /*
     * This is the first problem
