@@ -12,7 +12,7 @@ public class Solution {
         //System.out.println(test.checkIfTwoStringsAreAnagrams("zxcvbnm", "mnbvcxz"));
         Calculator test2 = new Calculator();
         //System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
-        System.out.println("Equal".equals("equal"));
+        System.out.println(checkIfTwoStringsAreAnagrams("system", "ysstem"));
     }
 
     //Problem 1
@@ -54,7 +54,7 @@ public class Solution {
     */
 
     //Problem 3
-    public String removeVowelsFromString(String input){
+    public static String removeVowelsFromString(String input){
         String result = "";
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         HashSet<Character> set = new HashSet<>();
@@ -73,7 +73,7 @@ public class Solution {
     }
 
     //Probem 4
-    public boolean checkIfTwoStringsAreAnagrams(String s1, String s2){
+    public static boolean checkIfTwoStringsAreAnagrams(String s1, String s2){
         if (s1 == null || s2 == null || s1.equals(s2)) {
             return false;
         }
@@ -84,7 +84,7 @@ public class Solution {
         Arrays.sort(array1);
         Arrays.sort(array2);
 
-        return array1.equals(array2);
+        return Arrays.equals(array1, array2);
     }
 
     //Problem 5
