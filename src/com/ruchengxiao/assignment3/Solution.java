@@ -11,8 +11,8 @@ public class Solution {
         //System.out.println(test.removeVowelsFromString("apple"));
         //System.out.println(test.checkIfTwoStringsAreAnagrams("zxcvbnm", "mnbvcxz"));
         Calculator test2 = new Calculator();
-        //System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
-        System.out.println(checkIfTwoStringsAreAnagrams("system", "ysstem"));
+        System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
+        //System.out.println(checkIfTwoStringsAreAnagrams("system", "ysstem"));
     }
 
     //Problem 1
@@ -134,7 +134,7 @@ public class Solution {
             return number * 12;
         }
 
-        public double[] doQuadraticEquation(int a, int b, int c) {
+        public static double[] doQuadraticEquation(int a, int b, int c) {
             if (a == 0) {
                 double[] result = new double[1];
                 result[0] = (double) -c / b;
