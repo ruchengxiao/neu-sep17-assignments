@@ -106,7 +106,7 @@ public class Solution {
             return number1 / number2;
         }
 
-        private double squareRoot(double number) {
+        public double squareRoot(double number) {
             return Math.sqrt(number);
         }
 
@@ -134,7 +134,7 @@ public class Solution {
             return number * 12;
         }
 
-        private double[] doQuadraticEquation(int a, int b, int c) {
+        public double[] doQuadraticEquation(int a, int b, int c) {
             if (a == 0) {
                 double[] result = new double[1];
                 result[0] = (double) -c / b;
