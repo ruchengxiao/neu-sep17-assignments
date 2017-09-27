@@ -8,10 +8,11 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution test = new Solution();
-        System.out.println(test.removeVowelsFromString("apple"));
-        System.out.println(test.checkIfTwoStringsAreAnagrams("zxcvbnm", "mnbvcxz"));
+        //System.out.println(test.removeVowelsFromString("apple"));
+        //System.out.println(test.checkIfTwoStringsAreAnagrams("zxcvbnm", "mnbvcxz"));
         Calculator test2 = new Calculator();
-        System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
+        //System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
+        System.out.println("Equal".equals("equal"));
     }
 
     //Problem 1
@@ -38,8 +39,7 @@ public class Solution {
      }
     */
 
-    //Problem 4
-
+    //Problem 2
     /*
     class Clock{
         String time;
@@ -51,10 +51,6 @@ public class Solution {
             time = t ;
         }
     }
-
-
-
-
     */
 
     //Problem 3
@@ -78,21 +74,17 @@ public class Solution {
 
     //Probem 4
     public boolean checkIfTwoStringsAreAnagrams(String s1, String s2){
-        if (s1.length() != s2.length()) {
+        if (s1 == null || s2 == null || s1.equals(s2)) {
             return false;
         }
 
-        int i = 0, j = s2.length() - 1;
-        while (i < s1.length() && j >= 0) {
-            if (s1.charAt(i) != s2.charAt(j)) {
-                return false;
-            }
+        char[] array1 = s1.toCharArray();
+        char[] array2 = s2.toCharArray();
 
-            i++;
-            j--;
-        }
+        Arrays.sort(array1);
+        Arrays.sort(array2);
 
-        return true;
+        return array1.equals(array2);
     }
 
     //Problem 5
