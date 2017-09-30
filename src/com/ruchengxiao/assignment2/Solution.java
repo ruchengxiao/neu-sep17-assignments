@@ -1,3 +1,6 @@
+/* good work
+ * score 10 + extra credit 3.5; Total score 10
+ */
 package com.ruchengxiao.assignment2;
    /*
     * This file include 1, 2, 3, 6 problems
@@ -6,6 +9,7 @@ public class Solution {
     /*
     * This is the first problem
     */
+   // score 2
     public static double employeeSalary(double hours) {
         double salary = 0.0;
 
@@ -25,6 +29,7 @@ public class Solution {
     /*
      * This is the second problem
      */
+   // score 2
     public static int addDigits(int input) {
         int result = 0;
 
@@ -45,6 +50,7 @@ public class Solution {
     /*
      * This is the third problem
      */
+   // score 2
     public static void printPerfectNumbers(int n) {
         int count = 2;
 
@@ -70,6 +76,7 @@ public class Solution {
     /*
      * This is the sixth problem
      */
+   // extra credit 2
     public static void printIsoscelesTriangle(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
