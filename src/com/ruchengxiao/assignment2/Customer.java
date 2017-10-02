@@ -1,3 +1,4 @@
+// score 2 + extra credit 1
 package com.ruchengxiao.assignment2;
 
 import java.util.HashMap;

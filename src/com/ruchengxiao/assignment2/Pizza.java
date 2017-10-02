@@ -1,3 +1,4 @@
+// score 2 + extra credit 0.5
 package com.ruchengxiao.assignment2;
 /*
 * This is the forth problem
@@ -13,7 +14,7 @@ public class Pizza {
         this.loyaltyPoints = 5;
     }
 
-    public Pizza(String type) {
+    public Pizza(String type) { // though you are printing to console, this constructor creates an object without any initialization of data
         if (type == "Pepperoni") {
             this.unitPrice = 6.0;
             this.loyaltyPoints = 6;
