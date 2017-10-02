@@ -12,7 +12,8 @@ public class Solution {
         //System.out.println(test.checkIfTwoStringsAreAnagrams("zxcvbnm", "mnbvcxz"));
         Calculator test2 = new Calculator();
         System.out.println(Arrays.toString(test2.doQuadraticEquation(1,1,-2)));
-        //System.out.println(checkIfTwoStringsAreAnagrams("system", "ysstem"));
+        //System.out.println(checkIfTwoStringsAreAnagrams("system", "ysstem"))
+
     }
 
     //Problem 1
