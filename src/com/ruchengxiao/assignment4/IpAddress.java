@@ -1,7 +1,7 @@
 package com.ruchengxiao.assignment4;
 
 import java.util.Arrays;
-
+//This is the solution for problem 3
 public class IpAddress {
     String dottedDecimal;
     int[] fourOctets;

@@ -1,5 +1,5 @@
 package com.ruchengxiao.assignment4;
-
+//This is the solution for problem 2
 class Tool {
     protected int strength;
     protected char type;

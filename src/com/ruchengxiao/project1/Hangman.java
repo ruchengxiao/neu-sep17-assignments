@@ -1,9 +1,7 @@
 package com.ruchengxiao.project1;
 
 import java.io.Console;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Hangman {
     private ArrayList<String> words;
@@ -14,12 +12,18 @@ public class Hangman {
     private String choseWord;
 
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("abcd");
-        Hangman test = new Hangman(list);
+//        ArrayList<String> list = new ArrayList<>();
+//        list.add("abcd");
+//        Hangman test = new Hangman(list);
+//
+//        test.playGame();
+//
+//        List<Integer> lists = new ArrayList<>();
+        System.out.println(1<<3);
+    }
 
-        test.playGame();
-
+    private static void he(String str) {
+        str = "sadads";
     }
 
     public Hangman(ArrayList<String> words) {
@@ -142,7 +146,7 @@ public class Hangman {
             System.out.println("You win!!!!!");
         }
 
-        
+
         wrongList = null;
         correctList = null;
         choseWord = null;
