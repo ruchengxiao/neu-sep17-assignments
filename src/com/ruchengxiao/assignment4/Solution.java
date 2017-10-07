@@ -1,9 +1,14 @@
 package com.ruchengxiao.assignment4;
 
+import java.util.Arrays;
+
 //These are solutions for problem 1, problem 5
 public class Solution {
     public static void main(String[] args) {
         System.out.println(reformatString("1abs-sdas", 3));
+        double[] arr1 = {1, 2};
+        double[] arr2 = {3, 4};
+        System.out.println(findMedianSortedArrays(arr1, arr2));
     }
 
     public static String reformatString(String str, int K) {
@@ -51,5 +56,21 @@ public class Solution {
         }
 
         return sb.toString();
+    }
+
+    //Extra Credit
+    public static double findMedianSortedArrays(double[] nums1, double[] nums2) {
+        double[] result = new double[nums1.length + nums2.length];
+        for (int i = 0; i < nums1.length; i++) {
+            result[i] = nums1[i];
+        }
+
+        for (int i = 0; i < nums2.length; i++) {
+            result[nums1.length + i] = nums2[i];
+        }
+
+        Arrays.sort(result);
+        int length = result.length - 1;
+        return (result[length / 2] + result[(length + 1) / 2]) / 2;
     }
 }
