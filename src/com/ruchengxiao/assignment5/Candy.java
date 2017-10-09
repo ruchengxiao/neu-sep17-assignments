@@ -23,12 +23,26 @@ public class Candy extends DessertItem {
         String formatWeight = String.format("%.2f", this.weight);
         String str = formatWeight + " " + "lbs." + " @ " + this.pricePerPound + " " + "/lb." + "\n";
         StringBuilder sb = new StringBuilder();
-        sb.append(this.name);
-        while (sb.length() < DessertShoppe.widthOfReceipt
-                - DessertShoppe.cents2dollarsAndCentsmethod(getCost()).length()) {
-            sb.append(" ");
+        //sb.append(this.name);
+
+        String helper = this.name;
+        StringBuilder temp = new StringBuilder();
+        if (helper.length() > 25) {
+            while (helper.length() > 25) {
+                sb.append(helper.substring(0, 25) + "\n");
+                helper = helper.substring(25, helper.length());
+            }
+            temp.append(helper.substring(0, helper.length()));
+        } else {
+            temp.append(helper);
         }
 
+        while (temp.length() < DessertShoppe.widthOfReceipt
+                - DessertShoppe.cents2dollarsAndCentsmethod(getCost()).length()) {
+            temp.append(" ");
+        }
+
+        sb.append(temp);
         sb.append(DessertShoppe.cents2dollarsAndCentsmethod(getCost()));
         sb.insert(0, str);
         return sb.toString();
