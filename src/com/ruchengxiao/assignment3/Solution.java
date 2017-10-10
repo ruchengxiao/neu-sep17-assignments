@@ -1,3 +1,6 @@
+/* Good Work
+ * score 10 + extra credit 2; Total Score 10;
+ */
 package com.ruchengxiao.assignment3;
 
 import java.util.Arrays;
@@ -18,7 +21,7 @@ public class Solution {
 
     //Problem 1
     /*
-    public class Book{
+    public class Book{ // score 1
           int size;
           int price;
           String name;
@@ -26,7 +29,7 @@ public class Solution {
               this.size = size;
           }
           public Book(int size, int price, String name){
-              super(); // Error: the classBook does not extend superclass
+              super(); // Error: the classBook does not extend superclass. // it extends from Object class by default
               this.size = size;
               this.price = price;
               this.name = name;
@@ -42,7 +45,7 @@ public class Solution {
 
     //Problem 2
     /*
-    class Clock{
+    class Clock{ // score 1
         String time;
         void getTime(){
             return time;//Error: Here is a return statement.
@@ -55,7 +58,7 @@ public class Solution {
     */
 
     //Problem 3
-    public static String removeVowelsFromString(String input){
+    public static String removeVowelsFromString(String input){ // score 2
         String result = "";
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         HashSet<Character> set = new HashSet<>();
@@ -74,7 +77,7 @@ public class Solution {
     }
 
     //Probem 4
-    public static boolean checkIfTwoStringsAreAnagrams(String s1, String s2){
+    public static boolean checkIfTwoStringsAreAnagrams(String s1, String s2){ // score 2
         if (s1 == null || s2 == null || s1.equals(s2)) {
             return false;
         }
@@ -89,7 +92,7 @@ public class Solution {
     }
 
     //Problem 5
-    static class Calculator {
+    static class Calculator { // score 4 + extra credit 2
 
         public double add(double number1, double number2) {
             return number1 + number1;
