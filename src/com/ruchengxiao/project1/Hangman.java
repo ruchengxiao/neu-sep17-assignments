@@ -12,18 +12,14 @@ public class Hangman {
     private String choseWord;
 
     public static void main(String[] args) {
-//        ArrayList<String> list = new ArrayList<>();
-//        list.add("abcd");
-//        Hangman test = new Hangman(list);
-//
-//        test.playGame();
-//
-//        List<Integer> lists = new ArrayList<>();
-        System.out.println(1<<3);
-    }
+        ArrayList<String> list = new ArrayList<>();
+        list.add("abcd");
+        Hangman test = new Hangman(list);
 
-    private static void he(String str) {
-        str = "sadads";
+        test.playGame();
+
+//        List<Integer> lists = new ArrayList<>();
+        //System.out.println(1<<3);
     }
 
     public Hangman(ArrayList<String> words) {
@@ -123,7 +119,6 @@ public class Hangman {
                 hangman[7][14] = '-';
                 hangman[7][15] = '-';
                 printHangman();
-                gameOver();
                 return;
             }
 
@@ -140,7 +135,11 @@ public class Hangman {
     }
 
     private void gameOver() {
+//        if (wrongList == null){
+//            System.out.println("sadsadadaas");
+//        }
         if (wrongList.size() == 8) {
+            //System.out.println(wrongList.size());
             System.out.println("You have lost the game!!!");
         } else {
             System.out.println("You win!!!!!");
@@ -183,7 +182,9 @@ public class Hangman {
             }
 
             handleGuess(letter.charAt(0));
+            //System.out.println(wrongList.size());
             if (wrongList.size() == 8) {
+
                 break;
             }
         }
