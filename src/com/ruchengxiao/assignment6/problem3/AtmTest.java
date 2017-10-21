@@ -1,6 +1,5 @@
 package com.ruchengxiao.assignment6.problem3;
 
-import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
@@ -99,7 +98,7 @@ public class AtmTest {
     @Test
     public static void testWithdrawl(Atm test, String bankAccountNumber, long amount) {
         test.withDrawl(bankAccountNumber, amount);
-        testAvailableBalance(test, bankAccountNumber, 9000);
+        testAvailableBalance(test, bankAccountNumber, 8980);
     }
 
     @Test

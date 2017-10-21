@@ -243,9 +243,9 @@ public class Atm {
                     break;
                 }
 
-                u.setAvailableBalance(u.getAvailableBalance() - amount + this.transactionFee);
+                u.setAvailableBalance(u.getAvailableBalance() - amount - this.transactionFee);
                 u.setRecentTransaction("WithDrawl" + " - " + amount);
-                this.availableAmountInMachine -= amount - this.transactionFee;
+                this.availableAmountInMachine -= amount + this.transactionFee;
                 break;
             }
         }
