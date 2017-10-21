@@ -39,7 +39,7 @@ public class Atm {
                     if (answer.toLowerCase().equals("no")) {
                         //login
                         while(true) {
-                            System.out.println("Please enter your phone number:");
+                            System.out.println("Please enter your bank account number:");
                             String phoneNumber = reader.next();
                             System.out.println("Please enter your password:");
                             String password = reader.next();
