@@ -1,20 +1,18 @@
 package com.ruchengxiao.MidTermPartB;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+
 public class Question5 {
     public static void main(String[] args) {
         Question5 test = new Question5();
-        int[][] maze = {{1, 0, 0, 0, 1},
-                        {1, 1, 1, 1, 0},
-                        {0, 1, 0, 1, 1},
-                        {1, 1, 1, 0, 1}};
+        int[][] maze = {{1, 0, 0, 0},
+                        {1, 1, 1, 1},
+                        {0, 1, 0, 0},
+                        {1, 1, 1, 1}};
         ArrayList<Cell> list = test.findPath(maze);
-        for(Cell c : list){
-            System.out.println(c.x+"  "+c.y);
-        }
+        //for(Cell c : list){
+            System.out.println(Arrays.toString(new ArrayList[]{list}));
+        //}
     }
     public ArrayList<Cell> findPath(int[][] maze) {
         ArrayList<ArrayList<Cell>> result = new ArrayList<>();
@@ -63,7 +61,7 @@ public class Question5 {
         return null;
     }
 
-    boolean inBound(Cell cell, int[][] maze) {
+    private boolean inBound(Cell cell, int[][] maze) {
         return cell.x >= 0 && cell.x < maze.length
                 && cell.y >= 0 && cell.y < maze[0].length;
     }
@@ -74,5 +72,9 @@ class Cell {
     Cell(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public String toString() {
+        return "[" + this.x + ", " + this.y + "]";
     }
 }
