@@ -3,7 +3,7 @@ package com.ruchengxiao.MidTermPartB;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Question1 {
+public class Question1 { // score 6
 
     public static void main(String[] args) {
         Question1 test = new Question1();
