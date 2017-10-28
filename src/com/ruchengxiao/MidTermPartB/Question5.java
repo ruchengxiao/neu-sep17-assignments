@@ -1,4 +1,4 @@
-package com.ruchengxiao.MidTermPartB;
+package com.ruchengxiao.MidTermPartB; // extra credit 10
 
 import java.util.*;
 
