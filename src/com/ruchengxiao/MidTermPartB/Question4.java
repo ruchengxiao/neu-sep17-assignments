@@ -1,4 +1,4 @@
-package com.ruchengxiao.MidTermPartB;
+package com.ruchengxiao.MidTermPartB; // score 10
 
 public class Question4 {
     int result;

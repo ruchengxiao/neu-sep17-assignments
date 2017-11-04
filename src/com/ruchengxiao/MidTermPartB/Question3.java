@@ -1,4 +1,4 @@
-package com.ruchengxiao.MidTermPartB;
+package com.ruchengxiao.MidTermPartB; // score 7
 
 import java.util.HashMap;
 import java.util.HashSet;
