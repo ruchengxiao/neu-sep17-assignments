@@ -71,7 +71,7 @@ public class Game {
                 System.out.println("Output - second part: ");
                 System.out.println();
                 System.out.println();
-                for (int m = 0; m < players[playerNum].getCurrentSize(); m++) {
+                for (int m = 0; m < playerNum; m++) {
 
                     if (players[m].findLowest(0) != -1) {
                         int index = players[m].findLowest(0);
@@ -83,6 +83,9 @@ public class Game {
                     }
                 }
 
+                if (card == null) {
+                    card = players[(int) Math.random() * playerNum].getCard(1);
+                }
                 tricks[i].update(playerNum, card);
                 tricks[i].addCard(card);
                 System.out.print("player " + playerNum + "        ");

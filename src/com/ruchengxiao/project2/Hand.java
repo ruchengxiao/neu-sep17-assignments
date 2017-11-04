@@ -76,9 +76,9 @@ public class Hand extends GroupOfCards{
                     index = findHighest(suit);
                 }
 
-                if (index == -1) {
-                    index = findHighest();
-                }
+//                if (index == -1) {
+//                    index = findHighest();
+//                }
         }
         else if ((trick.getCurrentSize() == game.PLAYERS - 1)
                 && !trick.getHearts() && !trick.getQueen()
@@ -92,15 +92,14 @@ public class Hand extends GroupOfCards{
         else {
             index = findHighest();
         }
-
+        if (index == -1) {
+            index = findHighest();
+        }
         //index = (int) (Math.random() * getCurrentSize());
         //System.out.println(" sdfsadasdsadassddsa" + getCurrentSize());
         Card result = getCard(index);
 
         //System.out.println(NUM + "           " + getCurrentSize());
-        if (result == null) {
-            //System.out.println("fucjfucjdsdj" + "           " + index + "   " + getCurrentSize());
-        }
 
         trick.update(NUM, result);
         game.updateHeartsAndQueen(result);
