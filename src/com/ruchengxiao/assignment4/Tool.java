@@ -1,6 +1,6 @@
 package com.ruchengxiao.assignment4;
 //This is the solution for problem 2
-class Tool {
+class Tool { // score 2
     protected int strength;
     protected char type;
 
@@ -21,7 +21,7 @@ class Paper extends Tool {
     }
 
     public boolean fight(Tool tool) {
-        if (tool.getClass().equals(Rock.class)) {
+        if (tool.getClass().equals(Rock.class)) { // if you are using this you can remove the tool type.
             return 2 * strength > tool.strength;
         } else if (tool.getClass().equals(Scissors.class)){
             return !((Scissors) tool).fight(this);
