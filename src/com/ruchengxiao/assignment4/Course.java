@@ -1,6 +1,6 @@
 package com.ruchengxiao.assignment4;
 //This is solution for problem 4
-public class Course {
+public class Course { // score 2
     private String name;
     private int numberOfStudent;
     private Student[] students;
@@ -18,7 +18,7 @@ public class Course {
         return numberOfStudent == 10;
     }
 
-    public void registerStudent(Student student) {
+    public void registerStudent(Student student) { // check the condition where a single student can register multiple times
         students[numberOfStudent] = student;
         numberOfStudent++;
     }

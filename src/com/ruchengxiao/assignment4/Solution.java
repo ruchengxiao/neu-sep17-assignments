@@ -1,3 +1,6 @@
+/* Good Work
+ * Score 9.8 + extra credit 1.8; Total score 10
+ */
 package com.ruchengxiao.assignment4;
 
 import java.util.Arrays;
@@ -11,8 +14,8 @@ public class Solution {
         System.out.println(findMedianSortedArrays(arr1, arr2));
     }
 
-    public static String reformatString(String str, int K) {
-        String dashDeleted = str.replaceAll("-", "").toUpperCase();
+    public static String reformatString(String str, int K) { // score 1.8
+        String dashDeleted = str.replaceAll("-", "").toUpperCase(); // we asked not to use these methods for this assignment
         StringBuilder sb = new StringBuilder();
         int firstLength = dashDeleted.length() % K;
         if (firstLength % K == 0) {
@@ -44,7 +47,7 @@ public class Solution {
     }
 
     //This is the solution for problem 5;
-    public String intToRoman(int num) {
+    public String intToRoman(int num) { // score 2
         int[] numbers = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         String[] romans = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         StringBuilder sb = new StringBuilder();
@@ -59,7 +62,7 @@ public class Solution {
     }
 
     //Extra Credit
-    public static double findMedianSortedArrays(double[] nums1, double[] nums2) {
+    public static double findMedianSortedArrays(double[] nums1, double[] nums2) { // extra credit 1.8
         double[] result = new double[nums1.length + nums2.length];
         for (int i = 0; i < nums1.length; i++) {
             result[i] = nums1[i];
@@ -69,7 +72,7 @@ public class Solution {
             result[nums1.length + i] = nums2[i];
         }
 
-        Arrays.sort(result);
+        Arrays.sort(result); // we asked not to use these methods for this assignment
         int length = result.length - 1;
         return (result[length / 2] + result[(length + 1) / 2]) / 2;
     }
