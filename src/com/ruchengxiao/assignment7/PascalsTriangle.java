@@ -8,7 +8,7 @@ import java.util.List;
 public class PascalsTriangle {
     public static void main(String[] args) {
         PascalsTriangle test = new PascalsTriangle();
-        test.printPascalTriangle(-1);
+        test.printPascalTriangle(7);
     }
 
     public void printPascalTriangle(int n){
