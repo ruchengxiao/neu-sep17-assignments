@@ -1,5 +1,5 @@
 package com.ruchengxiao.assignment7;
-
+//Problem 3
 class Root {
     public static void main(String[] args) {
 
@@ -30,13 +30,14 @@ class Controller extends Thread {
         device.startup();
         synchronized (device) {
             while (heat.getValue() <= 70 && pressure.getValue() <= 100) {
-                System.out.println("heat -> " + heat.getValue() + " , " + "pressure -> " + pressure.getValue());
                 try {
                     device.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                System.out.println("heat -> " + heat.getValue() + " , " + "pressure -> " + pressure.getValue());
             }
+
         }
 
         heat.stop();
@@ -51,6 +52,7 @@ class Device {
     }
 
     public void shutdown() {
+
         System.out.println("Device shutting down due to maintenance");
     }
 }
@@ -66,7 +68,7 @@ class Sensor extends Thread {
         return value;
     }
     public void updateValue() {
-        this.value += 0.001; // you check with other values here and see how it works
+        this.value += 0.01; // you check with other values here and see how it works
     }
     public void run() {
         while (true) {
