@@ -7,11 +7,9 @@ public class ExtraCredit {
     static int rowLength;
     static int columnLength;
     public static void main(String[] args) {
-        int[][] test = {{1, 2, 3, 1},
-                        {4, 5, 6, 1},
-                        {1, 2, 3, 1},
-                        {4, 5, 6, 1},
-                        {1, 2, 3, 1}};
+        int[][] test = {{1, 2, 4, 3, 1},
+                        {4, 5, 6, 5, 1},
+                        {1, 2, 3, 5, 1}};
         for (Integer i : spiralOrder(test)) {
             System.out.print(i + "->");
         }
@@ -32,7 +30,18 @@ public class ExtraCredit {
             return;
         }
 
-        if (rowStart == columnLength / 2 || columnStart == rowLength / 2) {
+        if (rowStart == columnLength / 2) {
+            for (int i = columnStart; i < rowLength - columnStart; i++) {
+                //System.out.println(matrix[rowStart][columnStart]);
+                result.add(matrix[i][rowStart]);
+            }
+            return;
+        }
+
+        if (columnStart == rowLength / 2) {
+            for (int i = rowStart; i < columnLength - rowStart; i++) {
+                result.add(matrix[columnStart][i]);
+            }
             return;
         }
 

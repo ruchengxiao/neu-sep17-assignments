@@ -17,7 +17,7 @@ public class MyIndexOutOfBoundException extends Exception{
 
 
     }
-    static void indexOutOfBoundException(int index) throws MyIndexOutOfBoundException{
+    public static void indexOutOfBoundException(int index) throws MyIndexOutOfBoundException{
         if (index <= 9 && index >= 0) {
             System.out.println("Pass");
         } else {

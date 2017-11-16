@@ -4,6 +4,7 @@
 package com.ruchengxiao.assignment4;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 //These are solutions for problem 1, problem 5
 public class Solution {
@@ -12,6 +13,7 @@ public class Solution {
         double[] arr1 = {1, 2};
         double[] arr2 = {3, 4};
         System.out.println(findMedianSortedArrays(arr1, arr2));
+
     }
 
     public static String reformatString(String str, int K) { // score 1.8
