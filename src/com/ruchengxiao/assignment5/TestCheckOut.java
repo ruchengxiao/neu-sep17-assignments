@@ -1,3 +1,6 @@
+/* Good Work
+ * Score 9 + extra credit 2; Total score 10
+ */
 package com.ruchengxiao.assignment5;
 
 public class TestCheckOut {

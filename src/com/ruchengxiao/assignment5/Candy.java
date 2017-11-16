@@ -1,7 +1,7 @@
 package com.ruchengxiao.assignment5;
 
 public class Candy extends DessertItem {
-    double weight;
+    double weight; // access should be private
     int pricePerPound;
     public Candy(String name, double weight, int pricePerPound) {
         super(name);
