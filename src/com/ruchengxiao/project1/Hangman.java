@@ -1,3 +1,7 @@
+/* Good work
+ * Score 19
+ * you are not displaying previous guessed letter, no. of guesses left and secret word when wrongly guessed
+ */
 package com.ruchengxiao.project1;
 
 import java.io.Console;
@@ -8,7 +12,7 @@ public class Hangman {
     private ArrayList<Character> wrongList;
     private String correctList;
     private char[][] hangman;
-    char[] dpWord;
+    char[] dpWord; // access should be private
     private String choseWord;
 
     public static void main(String[] args) {
