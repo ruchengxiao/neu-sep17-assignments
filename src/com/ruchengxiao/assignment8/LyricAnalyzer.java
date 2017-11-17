@@ -1,7 +1,6 @@
 package com.ruchengxiao.assignment8;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,7 +12,7 @@ public class LyricAnalyzer {
 
     public static void main(String[] args) {
         File file1 = new File("/Users/ruchengxiao/MyDocuments/" +
-                "neu-sep17-assignments/src/com/ruchengxiao/assignment8/out.txt");
+                "neu-sep17-assignments/src/com/ruchengxiao/assignment8/Question2_test4.txt");
         File file2 = new File("/Users/ruchengxiao/MyDocuments/" +
                 "neu-sep17-assignments/src/com/ruchengxiao/assignment8/test.txt");
         LyricAnalyzer test = new LyricAnalyzer();
