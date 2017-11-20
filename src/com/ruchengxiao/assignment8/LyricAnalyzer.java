@@ -52,7 +52,6 @@ public class LyricAnalyzer {
         }
 
         wordNum--;
-
         reader.close();
     }
 
