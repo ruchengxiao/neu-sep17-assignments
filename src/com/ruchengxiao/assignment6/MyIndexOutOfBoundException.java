@@ -2,7 +2,7 @@ package com.ruchengxiao.assignment6;
 /*
 * This is problem 1
 * */
-public class MyIndexOutOfBoundException extends Exception{
+public class MyIndexOutOfBoundException extends Exception{ // score 2
     int lowerBound;
     int upperBound;
     int index;
