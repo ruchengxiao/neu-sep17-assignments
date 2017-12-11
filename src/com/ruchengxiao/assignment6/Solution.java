@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class Solution {
+public class Solution {// score 1
     public static void parse(File file) throws IOException {
         RandomAccessFile input = null;
         String line = null;
