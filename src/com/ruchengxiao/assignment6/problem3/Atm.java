@@ -1,3 +1,6 @@
+/* Good Work
+ * Score 10 + extra credit 2; Total score 10
+ */
 package com.ruchengxiao.assignment6.problem3;
 
 import org.jetbrains.annotations.Contract;
@@ -7,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Atm {
-    long availableAmountInMachine;
+    long availableAmountInMachine; // should be private
     long transactionFee;
     List<UserData> userData;
 
