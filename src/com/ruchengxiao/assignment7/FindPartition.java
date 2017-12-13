@@ -1,3 +1,6 @@
+/* Good Work
+ * score 10 + extra credit 2; Total score
+ */
 package com.ruchengxiao.assignment7;
 
 import org.junit.jupiter.api.Assertions;
