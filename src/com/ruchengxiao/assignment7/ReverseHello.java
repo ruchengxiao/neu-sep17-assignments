@@ -1,6 +1,6 @@
 package com.ruchengxiao.assignment7;
 //Problem 2
-public class ReverseHello extends Thread{
+public class ReverseHello extends Thread{ // score 2
     int num;
     ReverseHello(int num) {
         this.num = num;
