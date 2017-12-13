@@ -1,7 +1,7 @@
 package com.ruchengxiao.assignment7;
 //Problem 3
 class Root {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // score 2
 
         Device device = new Device();
         Sensor heat = new Sensor(device);
