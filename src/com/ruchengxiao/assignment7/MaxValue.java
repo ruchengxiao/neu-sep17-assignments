@@ -2,7 +2,7 @@ package com.ruchengxiao.assignment7;
 
 import java.util.Arrays;
 //Problem 1
-public class MaxValue extends Thread{
+public class MaxValue extends Thread{ // score 2
     private int lo, hi;
     private int[] arr;
     private int ans = Integer.MIN_VALUE;
