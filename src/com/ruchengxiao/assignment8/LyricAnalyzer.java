@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LyricAnalyzer {
+public class LyricAnalyzer { // score 4
     private HashMap<String, ArrayList<Integer>> map;
     int wordNum;
 
