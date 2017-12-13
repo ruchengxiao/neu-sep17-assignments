@@ -11,7 +11,7 @@ public class PascalsTriangle {
         test.printPascalTriangle(7);
     }
 
-    public void printPascalTriangle(int n){
+    public void printPascalTriangle(int n){// score 2
         List<List<Integer>> result = new ArrayList<>();
         if (n <= 0) {
             return;
