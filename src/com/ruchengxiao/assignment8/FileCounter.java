@@ -3,7 +3,7 @@ package com.ruchengxiao.assignment8;
 import java.io.IOException;
 import java.util.Scanner;
 //1th problem
-public class FileCounter {
+public class FileCounter { // score 3
 
     private int characterCount, wordCount, lineCount;
 
