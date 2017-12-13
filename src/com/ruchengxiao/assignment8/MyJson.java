@@ -1,3 +1,6 @@
+/* GOod work
+ * Total score 10
+ */
 package com.ruchengxiao.assignment8;
 
 
