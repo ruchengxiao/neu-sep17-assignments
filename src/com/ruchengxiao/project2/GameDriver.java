@@ -1,3 +1,7 @@
+/* Good WOrk
+ * SCore 19.5
+ * you didn't sort the cards based on suit
+*/
 package com.ruchengxiao.project2;
 
 import java.util.Scanner;
